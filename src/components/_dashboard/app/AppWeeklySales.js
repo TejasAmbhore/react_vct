@@ -51,7 +51,7 @@ export default function AppWeeklySales() {
   const [sec, setsec] = useState("00");
   let interval = useRef();
   const countdown = () => {
-    const Vct_date = new Date("feb 26, 2022 14:00:00").getTime();
+    const Vct_date = new Date("Mar 03, 2022 14:00:00").getTime();
     interval = setInterval(() => {
       const Now_vctDate = new Date().getTime();
       const diff = Vct_date - Now_vctDate;
@@ -69,6 +69,8 @@ export default function AppWeeklySales() {
       }
     }, 1000);
   };
+  const vctDate = new Date("Mar 03, 2022 14:00:00").getTime();
+  const nowVctDate = new Date().getTime();
 
   useEffect(() => {
     countdown();
@@ -83,7 +85,7 @@ export default function AppWeeklySales() {
       <Typography variant="subtitle2" sx={{ opacity: 0.99999, fontSize: "36px", color:"#4a341e", fontWeight:"600" }}>
         TAdS Virtual Cycle Trip will commence in...
         <br />
-        {days} days : {hrs} hours : {min} Minutes : {sec} Seconds
+        {((vctDate) >= (nowVctDate)) ? <div>{days} days : {hrs} hours : {min} Minutes : {sec} Seconds</div> : <div>We are Live now</div>}
       </Typography>
     </RootStyle>
   );

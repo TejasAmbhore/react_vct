@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import Page from '../components/Page';
 import './User.css'
 import MyVerticallyCenteredModal from './Modal.js'
+import Sound from './theme.mp3'
 
 export default function EcommerceShop() {
   const [modalShow, setModalShow] = useState(false);
@@ -30,8 +31,13 @@ export default function EcommerceShop() {
     // eslint-disable-next-line
   }, [userIndex, setUserIndex]);
 
+
+  let audio = new Audio(Sound)
+
   const handleNavigate = () => {
     navigate("/game/map", { replace: true });
+    audio.play()
+    audio.loop = true
   }
   const vctDate = new Date("feb 18, 2022 17:45:00").getTime();
   const nowVctDate = new Date().getTime();
