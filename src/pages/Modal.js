@@ -1,15 +1,24 @@
 import Modal from "react-bootstrap/Modal";
 import "./Modal.css";
 import { RiGhost2Line } from 'react-icons/ri'
+import React, { useState } from "react"
 
 
 function MyVerticallyCenteredModal(props) {
+
+
+  // const [show, setShow] = useState(false);
+
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+
 
   return (
     <Modal
       {...props}
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      
       contentClassName="custom-modal-style"
       dialogClassName="modal-w "
       className="mobile_view"
@@ -21,8 +30,9 @@ function MyVerticallyCenteredModal(props) {
         borderRadius: "12px",
         border: "1px solid rgba(255, 255, 255, 0.125)"
       }}
+      closeButton
     >
-      <Modal.Body
+      <Modal.Body  closeButton
         style={{ backgroundColor: "rgb(91 48 8)", border: "1px solid #333333" }}
       >
         <div style={{ padding: "7%", color: "#ffffff", fontWeight: "500", fontSize: "20px", lineHeight: "2.4" }}>
@@ -33,7 +43,7 @@ function MyVerticallyCenteredModal(props) {
           5.	To win interesting prizes, complete all of the riddles in the same way, as quickly as possible.<br />
           6.	Make sure you complete the VCT in one sitting. OR the time keeps increasing <br />
           PS: The music starts as you click on the Start button and you are not allowed to stop that <RiGhost2Line /> Refreshing the page stops the music, to play it again, click on the sound icon in the top-left of the screen
-
+          PPS: Click on F11 button for Better Experience<RiGhost2Line />
         </div>
       </Modal.Body>
     </Modal>

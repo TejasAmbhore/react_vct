@@ -24,7 +24,7 @@ export default function GameEnd() {
         <img src="https://raw.githubusercontent.com/TAdS-VCT/Media/main/BG%20images/Fireplace2.jpeg" alt="end" className="fireplace" />
         <div className="text_endgame">
           <h1>Voila!</h1>
-          <h1> You just had a tour of the entire IIT KGP campus! Results will be released soon...</h1>
+          <h1>The Hogwarts Express has covered all the stops and it's time to say Goodbye. Hope to see you soon in campus and explore all the places in real life.</h1>
         </div>
       </div>
     </div>
