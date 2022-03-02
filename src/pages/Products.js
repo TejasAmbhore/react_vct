@@ -73,7 +73,8 @@ export default function EcommerceShop() {
                 <button onClick={() => navigate("/", { replace: true })} className="button_vct">Let's Go!</button>
               }
             </div>
-              : <div className='vct_details'> Please wait</div>}
+              : <div className='vct_details'> <button  className="button_vct">
+              Please Wait</button></div>}
           </div>
         </Page>
       </div>
