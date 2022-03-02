@@ -51,7 +51,7 @@ export default function AppWeeklySales() {
   const [sec, setsec] = useState("00");
   let interval = useRef();
   const countdown = () => {
-    const Vct_date = new Date("Mar 03, 2022 14:00:00").getTime();
+    const Vct_date = new Date("Mar 04, 2022 17:30:00").getTime();
     interval = setInterval(() => {
       const Now_vctDate = new Date().getTime();
       const diff = Vct_date - Now_vctDate;
@@ -69,7 +69,7 @@ export default function AppWeeklySales() {
       }
     }, 1000);
   };
-  const vctDate = new Date("Mar 03, 2022 14:00:00").getTime();
+  const vctDate = new Date("Mar 04, 2022 17:30:00").getTime();
   const nowVctDate = new Date().getTime();
 
   useEffect(() => {
