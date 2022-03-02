@@ -79,6 +79,7 @@ export default function Map() {
     let audio = new Audio(Sound)
 
     const playBg = () => {
+        window.focus();
         audio.pause()
         audio.play()
 

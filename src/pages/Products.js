@@ -36,6 +36,7 @@ export default function EcommerceShop() {
 
   const handleNavigate = () => {
     navigate("/game/map", { replace: true });
+    window.focus();
     audio.play()
     audio.loop = true
   }
