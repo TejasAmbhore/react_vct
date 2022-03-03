@@ -40,7 +40,7 @@ export default function EcommerceShop() {
     audio.play()
     audio.loop = true
   }
-  const vctDate = new Date("Mar 02, 2022 17:30:00").getTime();
+  const vctDate = new Date("Mar 04, 2022 17:30:00").getTime();
   const nowVctDate = new Date().getTime();
 
   return (
