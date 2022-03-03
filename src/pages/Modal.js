@@ -28,10 +28,16 @@ function MyVerticallyCenteredModal(props) {
         webkitbackdropFilter: "blur(6px) saturate(180%)",
         backgroundColor: "rgba(155, 155, 155, 0.45)",
         borderRadius: "12px",
-        border: "1px solid rgba(255, 255, 255, 0.125)"
+        border: "1px solid rgba(255, 255, 255, 0.125)",
+        marginLeft:"7%"
       }}
       closeButton
     >
+       <Modal.Header style={{ backgroundColor: "rgba(91 48 8)", color: "#fff", fontSize: "40px" }} closeButton>
+                                    <Modal.Title id="exampleModalCenterTitle" style={{ fontSize: "36px" }} >
+                                        Instructions
+                                    </Modal.Title>
+                                </Modal.Header>
       <Modal.Body  closeButton
         style={{ backgroundColor: "rgb(91 48 8)", border: "1px solid #333333" }}
       >

@@ -109,7 +109,7 @@ export default function Map() {
                         <div>
                             <Modal size="lg" show={show} onHide={handleClose} centered style={{ opacity: "0.5", fontSize: "40px" }} >
 
-                                <Modal.Header style={{ backgroundColor: "#4A341E", color: "#fff", fontSize: "40px" }} >
+                                <Modal.Header style={{ backgroundColor: "#4A341E", color: "#fff", fontSize: "40px" }} closeButton>
                                     <Modal.Title id="exampleModalCenterTitle" style={{ fontSize: "36px" }} >
                                         Here's Your Hint
                                     </Modal.Title>
