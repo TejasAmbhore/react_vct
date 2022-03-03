@@ -26,7 +26,7 @@ export default function ShiruCafe() {
   }
   useEffect(() => {
     userdeatils();
-    document.title="TAdS || VCT"
+    document.title="TAdS | VCT"
 
     // eslint-disable-next-line
   }, [userIndex, setUserIndex]);
@@ -107,7 +107,7 @@ export default function ShiruCafe() {
   return (
     <>
       <LazyLoad>
-        <img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images/Dark%20Images/shiru%20cafe%20horror%20f.png?raw=true"} alt="hii" className='sc' />
+        <img src={"https://github.com/TAdS-VCT/Media/blob/main/new_riddles/shiru%20cafe%20horror%20f.png?raw=true"} alt="hii" className='sc' />
       </LazyLoad>
       <div className='backbutton'>
         <h1 className="mx-3">

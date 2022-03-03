@@ -1,7 +1,10 @@
+// eslint-disable-next-line
+import React, { useState } from "react"
 import Modal from "react-bootstrap/Modal";
 import "./Modal.css";
 import { RiGhost2Line } from 'react-icons/ri'
-import React, { useState } from "react"
+
+
 
 
 function MyVerticallyCenteredModal(props) {
@@ -18,7 +21,7 @@ function MyVerticallyCenteredModal(props) {
       {...props}
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      
+
       contentClassName="custom-modal-style"
       dialogClassName="modal-w "
       className="mobile_view"
@@ -29,16 +32,16 @@ function MyVerticallyCenteredModal(props) {
         backgroundColor: "rgba(155, 155, 155, 0.45)",
         borderRadius: "12px",
         border: "1px solid rgba(255, 255, 255, 0.125)",
-        marginLeft:"7%"
+        marginLeft: "7%"
       }}
       closeButton
     >
-       <Modal.Header style={{ backgroundColor: "rgba(91 48 8)", color: "#fff", fontSize: "40px" }} closeButton>
-                                    <Modal.Title id="exampleModalCenterTitle" style={{ fontSize: "36px" }} >
-                                        Instructions
-                                    </Modal.Title>
-                                </Modal.Header>
-      <Modal.Body  closeButton
+      <Modal.Header style={{ backgroundColor: "rgba(91 48 8)", color: "#fff", fontSize: "40px" }} closeButton>
+        <Modal.Title id="exampleModalCenterTitle" style={{ fontSize: "36px" }} >
+          Instructions
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body closeButton
         style={{ backgroundColor: "rgb(91 48 8)", border: "1px solid #333333" }}
       >
         <div style={{ padding: "7%", color: "#ffffff", fontWeight: "500", fontSize: "20px", lineHeight: "2.4" }}>

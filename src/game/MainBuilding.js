@@ -30,7 +30,7 @@ export default function MB() {
     imageList.forEach((image) => {
         new Image().src = image
     });
-    document.title="TAdS || VCT"
+    document.title="TAdS | VCT"
 
     // eslint-disable-next-line
   }, [userIndex, setUserIndex]);
@@ -111,7 +111,7 @@ export default function MB() {
 
   return (
     <>
-      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images/Dark%20Images/KGP%20Building%20horror%20f.png?raw=true"} alt="hii" className='mb' /></LazyLoad>
+      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/new_riddles/KGP%20Building%20horror%20f.png?raw=true"} alt="hii" className='mb' /></LazyLoad>
       <div className='backbutton'>
         <h1 className="mx-3">
           <FaChevronCircleLeft onClick={() => navigate("/game/map", { replace: true })} aria-hidden="true" style={{ cursor: "pointer" }} />

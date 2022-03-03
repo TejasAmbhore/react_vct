@@ -25,7 +25,7 @@ export default function Ḷake() {
   }
   useEffect(() => {
     userdeatils();
-    document.title="TAdS || VCT"
+    document.title="TAdS | VCT"
     // eslint-disable-next-line
     
   }, [userIndex, setUserIndex]);
@@ -107,7 +107,7 @@ export default function Ḷake() {
   return (
     <>
       {/* <img src={"https://github.com/TAdS-VCT/Media/blob/dbd8097066485dd07deab1a8ea971d99bb3e34c7/riddles/Lake%20Side/lake%20side%20dark.png"} alt="hii" className='lake' /> */}
-      <LazyLoad> <img src={"https://github.com/TAdS-VCT/Media/blob/dbd8097066485dd07deab1a8ea971d99bb3e34c7/riddles/Lake%20Side/lake%20side%20dark.png?raw=true"} alt="hii" className='lake' /></LazyLoad>
+      <LazyLoad> <img src={"https://github.com/TAdS-VCT/Media/blob/main/new_riddles/lake%20side%20dark.png?raw=true"} alt="hii" className='lake' /></LazyLoad>
       <div className='backbutton'>
         <h1 className="mx-3">
           <FaChevronCircleLeft onClick={() => navigate("/game/map", { replace: true })} aria-hidden="true" style={{ cursor: "pointer" }} />

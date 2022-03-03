@@ -26,7 +26,7 @@ export default function MB() {
   }
   useEffect(() => {
     userdeatils();
-    document.title="TAdS || VCT"
+    document.title="TAdS | VCT"
 
     // eslint-disable-next-line
   }, [userIndex, setUserIndex]);
@@ -108,7 +108,7 @@ export default function MB() {
   return (
     <>
       <ToastContainer />
-      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images/Dark%20Images/entrance_gate%20horror%20f.png?raw=true"} alt="hii" className='puribg' /></LazyLoad>
+      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/new_riddles/entrance_gate%20horror%20f.png?raw=true"} alt="hii" className='puribg' /></LazyLoad>
       <h1 className='backbutton mx-3'>
         <FaChevronCircleLeft onClick={() => navigate("/game/map", { replace: true })} aria-hidden="true" style={{ cursor: "pointer" }} />
       </h1>

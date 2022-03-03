@@ -26,7 +26,7 @@ export default function AgriDept() {
   }
   useEffect(() => {
     userdeatils();
-    document.title="TAdS || VCT"
+    document.title="TAdS | VCT"
     // eslint-disable-next-line
     
   }, [userIndex, setUserIndex]);
@@ -107,7 +107,7 @@ export default function AgriDept() {
 
   return (
     <>
-      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images/Dark%20Images/AGFE%20DEP%20horror%20f.png?raw=true"} alt="hii" className='agri' /></LazyLoad>
+      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/new_riddles/AGFE%20DEP%20horror%20f.png?raw=true"} alt="hii" className='agri' /></LazyLoad>
       <div className='backbutton'>
         <h1 className="mx-3">
           <FaChevronCircleLeft onClick={() => navigate("/game/map", { replace: true })} aria-hidden="true" style={{ cursor: "pointer" }} />
