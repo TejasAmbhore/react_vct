@@ -107,7 +107,7 @@ export default function ProfLakeSide() {
 
   return (
     <>
-      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/BG%20images/Dark%20Images/lakeside%20prof%20colony%20horror%20(2).png?raw=true"} alt="hii" className='pls' /></LazyLoad>
+      <LazyLoad><img src={"https://github.com/TAdS-VCT/Media/blob/main/new_riddles/lakeside%20prof%20colony%20horror%20(2)%20(1).png?raw=true"} alt="hii" className='pls' /></LazyLoad>
       <div className='backbutton'>
         <h1 className="mx-3">
           <FaChevronCircleLeft onClick={() => navigate("/game/map", { replace: true })} aria-hidden="true" style={{ cursor: "pointer" }} />
