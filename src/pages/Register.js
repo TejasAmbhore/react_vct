@@ -8,6 +8,7 @@ import AuthLayout from '../layouts/AuthLayout';
 import Page from '../components/Page';
 import { MHidden } from '../components/@material-extend';
 import { RegisterForm } from '../components/authentication/register';
+import './User.css'
 // import AuthSocial from '../components/authentication/AuthSocial';
 
 // ----------------------------------------------------------------------
@@ -46,6 +47,8 @@ const ContentStyle = styled('div')(({ theme }) => ({
   padding: theme.spacing(12, 0),
   color:"#fff"
 }));
+const vctDate = new Date("Mar 04, 2022 17:30:00").getTime();
+const nowVctDate = new Date().getTime();
 
 // ----------------------------------------------------------------------
 
@@ -70,13 +73,15 @@ export default function Register() {
 
       <Container>
         <ContentStyle>
-          <Box sx={{ mb: 5 }}>
+          
+          {((vctDate) >= (nowVctDate)) ? <div><Box sx={{ mb: 5 }}>
             <Typography variant="h3" gutterBottom>
               Register to Virtual Cycle Trip !
             </Typography>
             <Typography sx={{ color: '#fff' }}>Enter Your Details</Typography>
           </Box>
-          <RegisterForm />
+          <RegisterForm /></div>
+          : <div className="reg" style={{fontSize: '80px'}}>Registrations are closed </div>}
           <MHidden width="smUp">
             <Typography variant="subtitle2" sx={{ mt: 3, textAlign: 'center' }}>
               Already have an account?&nbsp;

@@ -17,6 +17,11 @@
     /* margin-top: -8%; */
 }
 
+.reg {
+    font-family: 'HarryPotter';
+    src: url(./hermandec.ttf);
+}
+
 .modal_button {
     width: 180px;
     color: white;
