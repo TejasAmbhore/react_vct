@@ -40,7 +40,7 @@ export default function EcommerceShop() {
     audio.play()
     audio.loop = true
   }
-  const vctDate = new Date("Mar 04, 2022 17:30:00").getTime();
+  const vctDate = new Date("Mar 05, 2022 11:15:00").getTime();
   const nowVctDate = new Date().getTime();
 
   return (
@@ -60,7 +60,7 @@ export default function EcommerceShop() {
       }}>
         <Page title="TAdS | VCT" style={{ marginTop: "0", }}>
           <div className="user_maindiv" >
-            {((vctDate) <= (nowVctDate)) ? <div className='vct_details'>
+            {((vctDate) >= (nowVctDate)) ? <div className='vct_details'>
 
               <button onClick={() => setModalShow(true)} className="modal_button">Instructions</button>
               <MyVerticallyCenteredModal
@@ -73,8 +73,10 @@ export default function EcommerceShop() {
                 <button onClick={() => navigate("/", { replace: true })} className="button_vct">Let's Go!</button>
               }
             </div>
-              : <div className='vct_details'> <button className="button_vct">
-                Please Wait</button><button onClick={() => setModalShow(true)} className="modal_button">Instructions</button>
+              : <div className='vct_details'> 
+              {/* <button className="button_vct">
+                </button><button onClick={() => setModalShow(true)} className="modal_button">Instructions</button> */}
+                <div className="reg" style={{fontSize: '40px', width:'250px', color:'black', marginLeft:'-50px'}}>Results will be announced soon </div>
                 <MyVerticallyCenteredModal
                   show={modalShow}
                   onHide={() => setModalShow(false)}
