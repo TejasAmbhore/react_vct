@@ -58,9 +58,9 @@ export default function EcommerceShop() {
         marginTop: '0px',
         overflow: "hidden"
       }}>
-        <Page title="TAdS | VCT" style={{ marginTop: "0", }}>
+         <Page title="TAdS | VCT" style={{ marginTop: "0", }}>
           <div className="user_maindiv" >
-            {((vctDate) >= (nowVctDate)) ? <div className='vct_details'>
+            {((vctDate) <= (nowVctDate)) ? <div className='vct_details'>
 
               <button onClick={() => setModalShow(true)} className="modal_button">Instructions</button>
               <MyVerticallyCenteredModal
@@ -73,10 +73,8 @@ export default function EcommerceShop() {
                 <button onClick={() => navigate("/", { replace: true })} className="button_vct">Let's Go!</button>
               }
             </div>
-              : <div className='vct_details'> 
-              {/* <button className="button_vct">
-                </button><button onClick={() => setModalShow(true)} className="modal_button">Instructions</button> */}
-                <div className="reg" style={{fontSize: '40px', width:'250px', color:'black', marginLeft:'-50px'}}>Results will be announced soon </div>
+              : <div className='vct_details'> <button className="button_vct">
+                Please Wait</button><button onClick={() => setModalShow(true)} className="modal_button">Instructions</button>
                 <MyVerticallyCenteredModal
                   show={modalShow}
                   onHide={() => setModalShow(false)}
